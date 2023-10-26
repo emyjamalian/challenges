@@ -39,19 +39,16 @@
   💡 Select the animals by their class name and use the text align property.
 */
 
-.animal:active {
-  cursor: grab;
-}
-.giraffe:active {
+.giraffe:hover {
   background-color: lightgreen;
   text-align: center;
 }
 
-.crocodile:active {
+.crocodile:hover {
   background-color: lightblue;
 }
 
-.dino:active {
+.dino:hover {
   background-color: lightsalmon;
   text-align: right;
 }
