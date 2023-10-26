@@ -21,6 +21,7 @@
 }
 
 .animal {
+  font-size: 32px;
   padding: 16px;
 
   /*
@@ -37,6 +38,23 @@
 
   💡 Select the animals by their class name and use the text align property.
 */
+
+.animal:active {
+  cursor: grab;
+}
+.giraffe:active {
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.crocodile:active {
+  background-color: lightblue;
+}
+
+.dino:active {
+  background-color: lightsalmon;
+  text-align: right;
+}
 
 /* 
   The animals want some color! 🎨
