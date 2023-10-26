@@ -90,6 +90,7 @@ ul .bio {
 ul .location {
   display: flex;
   align-items: left;
+  color: darkslategray;
 }
 /*
   Part 1
