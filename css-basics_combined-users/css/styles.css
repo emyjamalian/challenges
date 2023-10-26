@@ -82,6 +82,15 @@ aside .bio {
 aside .location {
   font-size: 10px;
 }
+
+ul .bio {
+  display: none;
+}
+
+ul .location {
+  display: flex;
+  align-items: left;
+}
 /*
   Part 1
 
