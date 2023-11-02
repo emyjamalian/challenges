@@ -10,15 +10,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-var title = "my post";
-var text = "my text";
-var likes = 2;
-var user = {
+let title = "my post";
+let text = "my text";
+let likes = 2;
+let user = {
   username: "username",
   firstName: "joe",
   lastName: "joelyn",
 };
-var isReported = false;
+let isReported = false;
 
 // --^-- write your code here --^--
 
