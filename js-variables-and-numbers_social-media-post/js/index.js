@@ -35,7 +35,7 @@ console.log(likes);
 console.log(user);
 console.log(isReported);
 
-likes += 2;
+likes++;
 console.log(likes);
 
 // --^-- write your code here --^--
