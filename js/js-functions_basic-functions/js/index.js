@@ -9,7 +9,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const book = {
+  title: "Shoe Dog",
+  author: "Phil Knight",
+  rating: "4.9",
+  numberOfSales: 1003,
+};
 // --^-- write your code here --^--
 
 /*
@@ -25,6 +30,10 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log(book);
+
+book.numberOfSales = book.numberOfSales + 100;
+console.log(book);
 
 // --^-- write your code here --^--
 
@@ -37,5 +46,18 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+function logBookData(increase) {
+  const book = {
+    title: "Shoe Dog",
+    author: "Phil Knight",
+    rating: "4.9",
+    numberOfSales: 1003,
+  };
+  book.numberOfSales = book.numberOfSales + increase;
+  console.log(book);
+}
+
+logBookData(200);
+logBookData(600);
 
 // --^-- write your code here --^--
