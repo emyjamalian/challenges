@@ -37,11 +37,8 @@ console.log(nestedNumber);
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
-<<<<<<< HEAD
 petsWithPush.push("rat");
 console.log(petsWithPush);
-=======
->>>>>>> ac0c53b (array challenge)
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
