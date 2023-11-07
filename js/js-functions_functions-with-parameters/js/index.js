@@ -12,6 +12,7 @@ console.log("Exercise 1:");
 function logText() {
   console.log("This text does not appear. Why?");
 }
+logText();
 
 console.log("-------------");
 console.log("Exercise 2:");
@@ -37,7 +38,16 @@ greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greet(name) {
+  console.log("Welcome " + name + ", good to see you again!");
+}
+
+let alice = "Alice";
+let bob = "Bob";
+let mary = "Mary";
+greet(alice);
+greet(bob);
+greet(mary);
 
 // --^-- write your code here --^--
 
@@ -51,4 +61,10 @@ Note: Separation text means the text that is logged into the console before each
 
 // --v-- write your code here --v--
 
+function logSeparator(numberOfExercise) {
+  console.log("-------------");
+  console.log("Exercise" + numberOfExercise + ":");
+}
+
+logSeparator(4);
 // --^-- write your code here --^--
