@@ -24,8 +24,8 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   const now = new Date().getHours();
-  //if (6 <= now <= 10) return "Good Morning!";
-  if (5 < now <= 18) return "Good Afternoon!";
+  if (6 <= now <= 12) return "Good Morning!";
+  if (12 < now <= 18) return "Good Afternoon!";
   if (18 < now <= 22) return "Good Evening!";
   else return "Good Night!";
 }
