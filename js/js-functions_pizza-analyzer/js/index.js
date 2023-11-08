@@ -31,14 +31,14 @@ pizzaInput2.addEventListener("input", () => {
 // define the function calculatePizzaGain here
 
 function calculatePizzaGain(diameter1, diameter2) {
-  const area1 = pizzaArea(diameter1);
-  const area2 = pizzaArea(diameter2);
+  const area1 = calculatePizzaArea(diameter1);
+  const area2 = calculatePizzaArea(diameter2);
   const pizzaGainedValue = ((area2 - area1) / area1) * 100;
   console.log(typeof pizzaGainedValue);
   output.textContent = Math.round(pizzaGainedValue);
 }
 
-function pizzaArea(diameter) {
+function calculatePizzaArea(diameter) {
   return (area = (1 / 4) * Math.PI * (diameter * diameter));
 }
 
