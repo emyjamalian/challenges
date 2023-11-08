@@ -11,12 +11,12 @@
   </head>
   <body>
     <section>
-      <form>
+      <form action="submit" id="information">
         <fieldset>
-          <p>
+          <p id="personal-information">
             We want to get to know you! please Enter your personal information
           </p>
-          <fieldset>
+          <fieldset name="Personal information" form="information">
             <legend>Personal information</legend>
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" />
@@ -25,11 +25,11 @@
             <label for="bday">Your Birthday:</label>
             <input type="date" id="bday" name="bday" />
           </fieldset>
-          <p>
+          <p id="further-information">
             Can you tell us a little bit more? We want to annoy you with
             unwanted ads
           </p>
-          <fieldset>
+          <fieldset aria-describedby="further-information" form="information">
             <legend>Further information</legend>
             <label for="favcolor">Select your favorite color:</label>
             <input type="color" id="favcolor" name="favcolor" />

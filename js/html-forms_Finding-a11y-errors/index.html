@@ -17,16 +17,19 @@
       </p>
 
       <form for="title">
-        <fieldset>
+        <fieldset aria-describedby="description">
           <legend>Enter your information</legend>
-          <label aria-describedby="name-input">Name:</label>
+          <label for="name-input" aria-labelledby="name-input">Name:</label>
           <input id="name-Input" type="text" name="name" />
-          <label aria-describedby="age-input">Age:</label>
+          <label for="age-input" aria-describedby="age-input">Age:</label>
           <input id="age-Input" type="text" name="age" />
-          <label aria-describedby="color-input">Color you cannot see:</label>
+          <label for="color-input" aria-describedby="color-input"
+            >Color you cannot see:</label
+          >
           <input id="color-Input" type="color" name="color" />
+          <label for="message">Leave us a message:</label>
           <textarea rows="7" placeholder="Leave us a message..."></textarea>
-          <button type="submit">Submit</button>
+          <button aria-label="submit" type="submit">Submit</button>
         </fieldset>
       </form>
     </section>
