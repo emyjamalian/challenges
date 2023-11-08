@@ -54,5 +54,5 @@ function updatePizzaDisplay(pizzaElement, newSize) {
 function updateOutputColor(size1, size2) {
   size2 <= size1
     ? (outputSection.style.backgroundColor = "var(--red)")
-    : "var(--green)";
+    : (outputSection.style.backgroundColor = "var(--green)");
 }
