@@ -11,14 +11,14 @@ Hint: Access the value by using `.value` on the input element
 
 */
 
-let firstInput = document.querySelector('[data-js="first-input"]');
+let input = document.querySelector('[data-js="first-input"]');
 let inputButton = document.querySelector('[data-js="button-uppercase"]');
 
 inputButton.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let firstInputValue = firstInput.value;
-  let uppercaseString = firstInputValue.toUpperCase();
+  let inputValue = input.value;
+  let uppercaseString = inputValue.toUpperCase();
 
   console.log(uppercaseString);
 });
