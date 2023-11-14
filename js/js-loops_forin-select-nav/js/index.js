@@ -45,5 +45,12 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write/change code here --v--
-
+for (const key in nav) {
+  let anchor = document.createElement("a");
+  const href = nav[key].href;
+  anchor.setAttribute("href", href);
+  const text = nav[key].text;
+  anchor.append(text);
+  ul.append(anchor);
+}
 // --^-- write/change code here --^--
