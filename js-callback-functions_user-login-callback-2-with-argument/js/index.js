@@ -15,5 +15,10 @@ handleUserLogin(showWelcomeMessage);
 
 //anonymous function inside function call
 handleUserLogin((userName) => {
-  showWelcomeMessage();
+  console.log(`Welcome ${userName}! You are logged in now.`);
+});
+
+//I don't know what;s this but
+handleUserLogin((userName) => {
+  showWelcomeMessage(userName);
 });
