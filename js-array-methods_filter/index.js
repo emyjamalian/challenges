@@ -30,7 +30,7 @@ console.log(onlyCardWithIdTwo);
 console.log("----------------");
 
 const allCardsWith3Tags = cards.filter((card) => {
-  return (card.tags.length = 3);
+  return card.tags.length === 3;
 });
 
 console.log(allCardsWith3Tags);
@@ -44,16 +44,20 @@ console.log(allCardsThatAreNotBookmarked);
 console.log("----------------");
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
-  card.isBookmarked;
-  return card.tags.textContent === "html" || card.tags.textContent === "js";
+  return (
+    card.isBookmarked &&
+    card.tags.filter((tag) => {
+      return tag === "js" || tag === "html";
+    }).length > 0
+  );
 });
 
 console.log(allCardsWithTagsHTMLOrJSThatAreBookmarked);
 console.log("----------------");
 
 export {
-  // onlyCardWithIdTwo,
-  // allCardsWith3Tags,
+  onlyCardWithIdTwo,
+  allCardsWith3Tags,
   allCardsThatAreNotBookmarked,
   allCardsWithTagsHTMLOrJSThatAreBookmarked,
 };
