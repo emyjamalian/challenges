@@ -48,7 +48,7 @@ const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
     card.isBookmarked &&
     card.tags.filter((tag) => {
       return tag === "js" || tag === "html";
-    }).length > 0
+    })
   );
 });
 
