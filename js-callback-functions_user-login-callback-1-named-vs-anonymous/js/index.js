@@ -6,3 +6,12 @@ function handleUserLogin(onSuccess) {
 }
 
 // Call handleUserLogin below!
+function showWelcomeMessage() {
+  console.log("Desired text");
+}
+
+handleUserLogin(showWelcomeMessage);
+
+handleUserLogin(() => {
+  console.log("desord text 😅");
+});
