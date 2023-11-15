@@ -21,6 +21,6 @@ const programmingLanguages = [
 for (language of programmingLanguages) {
   let li = document.createElement("li");
   ol.append(li);
-  li.innerHTML = li.innerHTML + language;
+  li.innerHTML = language;
 }
 // --^-- write/change code here --^--
