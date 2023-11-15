@@ -10,7 +10,7 @@ function showWelcomeMessage() {
   console.log("Desired text");
 }
 
-function handleUserLogin(showWelcomeMessage) {}
+handleUserLogin(showWelcomeMessage);
 
 handleUserLogin(() => {
   console.log("desord text 😅");
