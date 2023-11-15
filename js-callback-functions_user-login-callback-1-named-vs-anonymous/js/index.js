@@ -6,3 +6,14 @@ function handleUserLogin(onSuccess) {
 }
 
 // Call handleUserLogin below!
+// function showWelcomeMessage() {
+//   console.log("Desired text");
+// }
+
+// function handleUserLogin() {
+//   const firstArgument = showWelcomeMessage();
+// }
+
+handleUserLogin(() => {
+  console.log("desord text 😅");
+});
