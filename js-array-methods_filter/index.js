@@ -43,12 +43,13 @@ const allCardsThatAreNotBookmarked = cards.filter((card) => {
 console.log(allCardsThatAreNotBookmarked);
 console.log("----------------");
 
+//.length > 0  is the safety net
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
   return (
     card.isBookmarked &&
     card.tags.filter((tag) => {
       return tag === "js" || tag === "html";
-    })
+    }).length > 0
   );
 });
 
