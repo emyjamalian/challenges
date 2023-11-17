@@ -1,4 +1,3 @@
-import { Bookmark } from "../Bookmark/Bookmark";
 // Store the cards in a global state
 const cards = [
   {

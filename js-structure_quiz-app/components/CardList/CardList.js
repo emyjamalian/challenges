@@ -1,4 +1,4 @@
-import { Card, cards } from "../components/Card/Card.js";
+import { Card, cards } from "../../components/Card/Card.js";
 
 function CardList() {
   const cardList = document.createElement("section");
