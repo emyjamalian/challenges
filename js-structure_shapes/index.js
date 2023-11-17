@@ -1,6 +1,6 @@
-import circle from "./components/Circle/Circle.js";
-import square from "./components/Pentagon/Pentagon.js";
-import pentagon from "./components/Square/Square.js";
+import { square } from "./components/Square/Square.js";
+import { circle } from "./components/Circle/circle.js";
+import { pentagon } from "./components/Pentagon/Pentagon.js";
 
 const root = document.getElementById("root");
 
