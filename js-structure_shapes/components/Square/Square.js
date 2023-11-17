@@ -1,4 +1,4 @@
-import { getRandomColor } from "./utils/randomColor.js";
+import { getRandomColor } from "../../utils/randomColor.js";
 
 const square = document.createElement("div");
 square.classList.add("square");

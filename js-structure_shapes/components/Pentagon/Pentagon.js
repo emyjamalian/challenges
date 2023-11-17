@@ -1,4 +1,4 @@
-import { getRandomColor } from "./utils/randomColor.js";
+import { getRandomColor } from "../../utils/randomColor.js";
 
 const pentagon = document.createElement("div");
 pentagon.classList.add("pentagon");
