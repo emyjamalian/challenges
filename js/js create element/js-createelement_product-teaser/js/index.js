@@ -75,3 +75,4 @@ const buyButton = document.createElement("button");
 buyButton.classList.add("product__buy-button");
 buyButton.textContent = "Buy";
 productFooter.append(buyButton);
+
