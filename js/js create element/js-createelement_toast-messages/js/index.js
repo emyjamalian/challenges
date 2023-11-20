@@ -14,4 +14,5 @@ addButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   // Exercise: Clear the stack of toast messages
+  newEntry.classList.remove("toast-container__message");
 });
