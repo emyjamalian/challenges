@@ -29,6 +29,7 @@ for (let language in languages) {
   select.appendChild(option);
 }
 
+
 // --^-- write/change code here --^--
 
 // Part 2: Creating a Navigation Bar
@@ -52,4 +53,5 @@ for (const key in nav) {
   anchor.append(text);
   ul.append(anchor);
 }
+
 // --^-- write/change code here --^--
