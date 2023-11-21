@@ -38,7 +38,6 @@ const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
 
 // --v-- your code below this line --v--
-const body = document.querySelector("body");
 const url = "https://swapi.dev/api/people";
 
 async function fetchDataAndRender() {
@@ -49,7 +48,6 @@ async function fetchDataAndRender() {
   await responseData.results.forEach((person) => {
     const newCard = Card(person);
     renderElement(newCard);
-    body.append(newCard);
   });
 }
 
