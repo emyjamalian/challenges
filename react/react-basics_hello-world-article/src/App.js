@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  return <HelloWorldArticle>Replace me with your Component!</HelloWorldArticle>;
+  return <HelloWorldArticle />;
 }
 
 function HelloWorldArticle() {
