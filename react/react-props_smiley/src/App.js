@@ -5,6 +5,6 @@ export default function App() {
   return <Smiley ishappy={true} />;
 }
 
-function Smiley({ isHappy = true }) {
+function Smiley({ isHappy }) {
   return <h1>{isHappy ? "😃" : "😢"}</h1>;
 }
