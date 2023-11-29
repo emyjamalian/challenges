@@ -15,5 +15,13 @@
 }
 
 .card--yellow {
-  background-color: lightyellow;
+  background-color: yellow;
+}
+
+.card--orange {
+  background-color: orange;
+}
+
+.card--purple {
+  background-color: purple;
 }
