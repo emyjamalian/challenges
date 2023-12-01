@@ -10,11 +10,10 @@ export default function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let holidayValue = event.target.elements.holiday.value;
-    const dateValue = event.target.elements.date.value;
+
     setFormValues({
-      holiday: holidayValue,
-      date: dateValue,
+      holiday: event.target.elements.holiday.value,
+      date: event.target.elements.date.value,
     });
 
     //reset form

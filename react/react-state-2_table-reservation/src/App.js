@@ -12,7 +12,7 @@ export default function App() {
   }
 
   function handleRemovePeople() {
-    setPeople(people - 1);
+    setPeople(Math.max(0, people - 1));
   }
 
   return (
