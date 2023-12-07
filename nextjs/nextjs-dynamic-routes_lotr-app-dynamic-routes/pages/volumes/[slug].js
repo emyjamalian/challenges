@@ -8,11 +8,10 @@ export default function VolumeDetail() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const volumeIndex = volumes.find((volume) => volume.slug === slug);
+  const volume = volumes.find((volume) => volume.slug === slug);
 
-  const volume = volumes[volumeIndex];
-  const nextVolume = volumes[volumeIndex + 1];
-  const previousVolume = volumes[volumeIndex - 1];
+  const nextVolume = volumes[volume + 1];
+  const previousVolume = volumes[volume - 1];
 
   if (!volume) {
     return null;
