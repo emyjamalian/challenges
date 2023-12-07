@@ -8,17 +8,21 @@ export default function VolumeDetail() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const volume = volumes.find((volume) => volume.slug === slug);
+  const currentVolumeIndex = volumes.findIndex(
+    (volume) => volume.slug === slug
+  );
 
-  const nextVolume = volumes[volume + 1];
-  const previousVolume = volumes[volume - 1];
+  const currentVolume = volumes[currentVolumeIndex];
+  const nextVolume = volumes[currentVolumeIndex + 1];
+  const previousVolume = volumes[currentVolumeIndex - 1];
 
-  if (!volume) {
+  if (!currentVolume) {
     return null;
   }
 
-  const { title, description, cover, books } = volume;
+  const { title, description, cover, books } = currentVolume;
 
+  console.log(currentVolume, previousVolume, nextVolume);
   return (
     <>
       <Link href="/volumes">← All Volumes</Link>
