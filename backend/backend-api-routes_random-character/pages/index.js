@@ -17,7 +17,6 @@ export default function HomePage() {
 
   return (
     <div>
-      {" "}
       <h1>Random Character</h1>
       <p>First Name: {data.firstName}</p>
       <p>Lastname: {data.lastName}</p>
