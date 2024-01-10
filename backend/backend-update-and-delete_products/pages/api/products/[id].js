@@ -25,7 +25,7 @@ export default async function handler(request, response) {
   }
 
   if (request.method === "DELETE") {
-    await Joke.findByIdAndDelete(id);
+    await Product.findByIdAndDelete(id);
 
     response.status(200).json({ message: "Success!" });
   }
